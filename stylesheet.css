@@ -1,9 +1,40 @@
+/* CSSのリセット */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: "Avenir Next";
+    font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
 }
 
 li {
     list-style: none;
+}
+
+h1 {
+    font-size: 140px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+}
+
+input, textarea {
+    border: 1px solid #dee7ec;
+    margin-bottom: 30px;
+    padding: 20px;
+    width: 400px;
 }
 
 .header {
@@ -24,64 +55,49 @@ li {
 }
 
 .main {
-    padding: 100px 80px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
-.copy-container h1 {
-    font-size: 140px;
+.main-box {
+    padding-top: 100px;
 }
 
-.copy-container h2 {
-    font-size: 60px;
-}
-
-.copy-container span {
+.main-catch-copy span {
     color: #ff4a4a;
 }
 
-.contents {
+.main-contents {
     height: 500px;
-    margin-top: 100px;
-}
-
-.section-title {
-    border-bottom: 2px solid #dee7ec;
-    font-size: 28px;
-    padding-bottom: 15px;
-    margin-bottom: 50px;
 }
 
 .contents-item {
     float: left;
-    margin-right: 40px;
+    padding-right: 40px;
 }
 
 .contents-item p {
     font-size: 24px;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
-.contact-form {
-    padding-top: 100px;
+.main-contact-form {
+    padding-bottom: 100px;
 }
 
-input, textarea {
-    border: 1px solid #dee7ec;
-    width: 400px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    padding: 20px;
-    font-size: 18px;
+.main-contact-form p {
+    padding-bottom: 10px;
 }
 
-.contact-submit {
+.submit-button {
     background-color: #dee7ec;
     color: #889eab;
+    font-size: 18px;
 }
 
 .footer {
     background-color: #2f5167;
-    color: #fff;
+    color: #ffffff;
     height: 120px;
     padding: 40px;
 }
