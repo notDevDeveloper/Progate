@@ -1,55 +1,96 @@
-body {
+/* CSS reset */
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  padding: 0;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+h2 {
+  padding-top: 80px;
+}
+
+h2,
+h3 {
+  color: #5f5d60;
+  font-weight: normal;
+}
+
 .container {
   margin: 0 auto;
-  padding: 0 15px;
   width: 1170px;
+}
+
+header {
+  background-color: rgba(34, 49, 52, 0.9);
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header-logo {
+  float: left;
+  padding: 20px 0;
+  width: 124px;
+}
+
+.login {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  float: right;
+  line-height: 65px;
+  padding: 0 25px;
+  transition: 0.5s;
+}
+
+.login:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
 }
 
 .top-wrapper {
   background-image: url(https://prog-8.com/images/html/advanced/top.png);
   background-size: cover;
   color: white;
-  padding: 180px 0 100px 0;
+  padding-top: 180px;
+  padding-bottom: 100px;
   text-align: center;
 }
 
-.top-wrapper h1 {
-  font-size: 45px;
-  letter-spacing: 5px;
-  opacity: 0.7;
-}
-
+.top-wrapper h1,
 .top-wrapper p {
   opacity: 0.7;
-}
-
-.btn-wrapper {
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
 }
 
 .btn {
@@ -57,125 +98,92 @@ a {
   color: white;
   display: inline-block;
   opacity: 0.8;
-  padding: 8px 24px;
 }
 
 .btn:hover {
   opacity: 1;
 }
 
-.fab {
-  margin-right: 5px;
+.top-btn {
+  padding: 8px 24px;
 }
 
-header {
-  background-color: rgba(34, 49, 52, 0.9);
-  height: 65px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 10;
+.signup {
+  background-color: #239b76;
+  margin: 30px 0 15px 0;
 }
 
-.logo {
-  margin-top: 20px;
-  width: 124px;
+.facebook {
+  background-color: #3b5998;
+  margin-top: 15px;
 }
 
-.header-left {
-  float: left;
+.twitter {
+  background-color: #55acee;
+  margin-left: 10px;
 }
 
-.header-right {
-  background-color: rgba(255, 255, 255, 0.3);
-  float: right;
-  transition: all 0.5s;
-}
-
-.header-right:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.header-right a {
-  color: white;
-  display: block;
-  line-height: 65px;
-  padding: 0 25px;
-}
-
-.lesson-wrapper {
+.contents-wrapper {
   background-color: #f7f7f7;
-  height: 500px;
-  padding-bottom: 80px;
+  height: 580px;
   text-align: center;
-}
-
-.heading {
-  color: #5f5d60;
-  padding-bottom: 30px;
-  padding-top: 60px;
-}
-
-.heading h2 {
-  font-weight: normal;
 }
 
 .lesson {
   float: left;
   width: 25%;
-}
-
-.lesson-icon {
   position: relative;
+  margin-top: 50px;
 }
 
-.lesson-icon p {
-  color: white;
-  width: 100%;
+.icon-title {
+  color: #ffffff;
   position: absolute;
-  top: 74px;
+  top: 91px;
+  width: 100%;
 }
 
 .txt-contents {
   color: #b3aeb5;
-  display: inline-block;
-  font-size: 12px;
-  margin-top: 20px;
+  font-size: 13px;
+  margin: 0 auto;
+  padding-top: 15px;
   width: 80%;
 }
 
-.heading h3 {
-  font-weight: normal;
-}
-
 .message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
   text-align: center;
 }
 
-.message {
+.dev-btn {
   background-color: #5dca88;
-  box-shadow: 0 7px #1a7940;
   cursor: pointer;
+  box-shadow: 0px 7px #1a7940;
+  margin: 50px 0 80px 0;
   padding: 15px 40px;
 }
 
-.message:active {
+.dev-btn:hover {
+  opacity: 1;
+}
+
+.dev-btn:active {
   box-shadow: none;
   position: relative;
   top: 7px;
 }
 
-footer img {
-  width: 125px;
-}
-
-footer p {
+footer {
+  border-top: 1px solid #eee;
   color: #b3aeb5;
   font-size: 12px;
 }
 
-footer {
-  padding-top: 30px;
+.footer-logo {
+  float: left;
+  padding: 30px 0;
+}
+
+.footer-logo img {
+  width: 124px;
 }
