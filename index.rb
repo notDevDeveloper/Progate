@@ -1,6 +1,6 @@
-length = 9
-width = 8
-area = length * width
+score = 92
 
-# 「面積は◯◯です」となるように出力してください
-puts "面積は#{area}です"
+# 条件式を「score > 80」とするif文をつくってください
+if score > 80
+    puts "よくできました"
+end
