@@ -1,11 +1,6 @@
 length = 9
 width = 8
-puts width
-puts length * width
+area = length * width
 
-puts "----"
-# widthの値に5を足して、widthの値を変更してください
-width += 5
-
-puts width
-puts length * width
+# 「面積は◯◯です」となるように出力してください
+puts "面積は#{area}です"
