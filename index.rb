@@ -1,10 +1,7 @@
-text = "プログラミングを学ぼう"
+# 変数textに「をマスターしよう」を代入してください
+text = "をマスターしよう"
 
-# 文字列「Progateで」と変数textを連結して、出力してください
-puts "Progateで" + text
-
-length = 8
-width = 9
-
-# 変数lengthと変数widthを掛けて出力してください
-puts length * width
+# 下記の文字列に変数textを連結してください
+puts "HTML" + text
+puts "CSS" + text
+puts "Ruby" + text
