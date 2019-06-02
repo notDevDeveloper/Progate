@@ -1,15 +1,7 @@
 # encoding: utf-8
 
-# 好きな年を西暦（例：2000）で代入してください
-year = 2000
+# 変数languagesに、複数の文字列を要素に持つ配列を代入してください
+languages = ["日本語", "英語", "スペイン語"]
 
-# 以下の条件分岐に、新しい条件を追加してください
-if year < 1896
-  puts "#{year}年にオリンピックはまだありません"
-elsif year == 1916 || year == 1940 || year == 1944
-  puts "#{year}年にオリンピックは開催されませんでした"
-elsif year % 4 == 0
-  puts "#{year}年は夏季オリンピックが開催されました"
-else
-  puts "#{year}年は夏季オリンピックイヤーではありません"
-end
+# 変数languagesを出力してください
+puts languages
