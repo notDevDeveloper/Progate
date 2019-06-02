@@ -1,7 +1,6 @@
 # encoding: utf-8
 
-# キーをシンボルで書き換えてください
-exam = { :subject => "Math", :score => 80 }
+# 省略した書き方で書き換えてください
+exam = { subject: "Math", score: 80 }
 
-# キー「:score」の値を出力してください
-puts exam[:score]
+puts exam[:subject]
