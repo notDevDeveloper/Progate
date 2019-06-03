@@ -1,12 +1,10 @@
 # encoding: utf-8
 
-def introduce
-  puts "こんにちは"
-  puts "私はにんじゃわんこです"
-  # 出力を追加してください
-  puts "14歳です"
+# print_infoメソッドを定義してください
+def print_info
+  puts "わんこでんきへようこそ！"
+  puts "今日はヘッドホンがセール中です！"
 end
 
-puts "-----自己紹介-----"
-# introduceメソッドを呼び出してください
-introduce
+# print_infoメソッドを呼び出してください
+print_info
