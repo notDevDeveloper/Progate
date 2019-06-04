@@ -1,10 +1,14 @@
 # encoding: utf-8
 
-# 引数priceも受け取るように変更してください
-def print_info(item, price)
-  puts "わんこでんきへようこそ！"
-  puts "今日は#{item}がセール中で#{price}円です！"
+def discount(price)
+  # 「price / 2」を戻り値として返してください
+  return price / 2
 end
 
-# print_infoメソッドを呼び出してください
-print_info("SDカード", 1200)
+puts "テレビがセール中です！"
+
+# discountメソッドの戻り値を変数half_priceに代入してください
+half_price = discount(15000)
+
+# 「特別価格で〇〇円です」となるように出力してください
+puts "特別価格で#{half_price}円です"
