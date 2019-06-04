@@ -5,5 +5,13 @@ class Menu
   attr_accessor :price
 end
 
-# Menuクラスのインスタンスを生成して変数menu1に代入してください
 menu1 = Menu.new
+
+menu1.name = "ピザ"
+puts menu1.name
+
+# menu1のpriceに「800」を代入してください
+menu1.price = 800
+
+# menu1のpriceを出力してください
+puts menu1.price
