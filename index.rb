@@ -1,10 +1,9 @@
 # encoding: utf-8
 
-# print_infoメソッドを定義してください
-def print_info
-  puts "わんこでんきへようこそ！"
-  puts "今日はヘッドホンがセール中です！"
+def introduce(name)
+  puts "こんにちは"
+  puts "私は#{name}です"
 end
 
-# print_infoメソッドを呼び出してください
-print_info
+# 引数を渡してメソッドを呼び出してください
+introduce("にんじゃわんこ")
