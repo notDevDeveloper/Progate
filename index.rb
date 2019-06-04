@@ -1,13 +1,16 @@
 # encoding: utf-8
 
-# shipping_free?メソッドを定義してください
-def shipping_free?(price)
-  return price >= 5000
+def price_with_shipping(price)
+  # priceが5000以上のとき、戻り値としてpriceを返すif文を作成してください
+  if price >= 5000
+    return price
+  end
+  # priceに500を加えた値を戻り値として返してください
+  return price + 500
 end
 
-# if文の条件式でshipping_free?メソッドを呼び出してください
-if shipping_free?(3000)
-  puts "5000円以上のお買い上げなので送料はいただきません"
-else
-  puts "追加で送料をいただきます"
-end
+puts "商品の合計金額は3000円です"
+puts "お支払い金額は、送料込みで#{price_with_shipping(3000)}円です"
+puts "-----------"
+puts "商品の合計金額は10000円です"
+puts "お支払い金額は、送料込みで#{price_with_shipping(10000)}円です"
