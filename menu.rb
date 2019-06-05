@@ -1,6 +1,5 @@
 # encoding: utf-8
 
-# ここにMenuクラスを貼り付けてください
 class Menu
   attr_accessor :name
   attr_accessor :price
