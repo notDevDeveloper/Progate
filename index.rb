@@ -1,20 +1,21 @@
 # encoding: utf-8
 
-require "./menu"
+puts "名前を入力してください"
 
-menu1 = Menu.new(name: "ピザ", price: 800)
-menu2 = Menu.new(name: "すし", price: 1000)
-menu3 = Menu.new(name: "コーラ", price: 300)
-menu4 = Menu.new(name: "お茶", price: 200)
+# 入力を受け取って変数nameに代入してください
+name = gets.chomp
 
-menus = [menu1, menu2, menu3, menu4]
+# 「○○さん、いらっしゃいませ」となるように出力してください
+puts "#{name}さん、いらっしゃいませ"
 
-# 変数indexを定義して「0」を代入してください
-index = 0
-menus.each do |menu|
-  # 番号をつけてメニューの内容が出力されるように書き換えてください
-  puts "#{index}. #{menu.info}"
+puts "1つ100円のお菓子があります"
+puts "いくつ買いますか?"
 
-  # 変数indexに1を加えて値を更新してください
-  index += 1
-end
+# 入力を数値として受け取って変数countに代入してください
+count = gets.chomp.to_i
+
+# 変数total_priceに、100とcountを掛けた値を代入してください
+total_price = 100 * count
+
+# 「お会計は○○円です」となるように出力してください
+puts "お会計は#{total_price}円です"
