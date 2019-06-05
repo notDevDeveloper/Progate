@@ -4,11 +4,16 @@ class Menu
   attr_accessor :name
   attr_accessor :price
 
+  # initializeメソッドを書き換えてください
+  def initialize(name:, price:)
+    self.name = name
+    self.price = price
+  end
+
   def info
     return "#{self.name} #{self.price}円"
   end
 
-  # get_total_priceメソッドを定義してください
   def get_total_price(count)
     total_price = self.price * count
     if count >= 3
@@ -18,9 +23,7 @@ class Menu
   end
 end
 
-menu1 = Menu.new
-menu1.name = "ピザ"
-menu1.price = 800
+# 引数を渡してインスタンスを生成してください
+menu1 = Menu.new(name: "すし", price: 1000)
 
-# menu1に対してget_total_priceメソッドを呼び出してください
-puts menu1.get_total_price(3)
+puts menu1.info
