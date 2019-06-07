@@ -5,10 +5,9 @@ require "./menu"
 class Food < Menu
   attr_accessor :calorie
 
-  # initializeメソッドを定義してください
   def initialize(name:, price:, calorie:)
-    self.name = name
-    self.price = price
+    # superを使って書き換えてください
+    super(name: name, price: price)
     self.calorie = calorie
   end
 

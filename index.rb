@@ -3,7 +3,6 @@
 require "./food"
 require "./drink"
 
-# Food.newの引数を書き換えてください
 food1 = Food.new(name: "ピザ", price: 800, calorie: 700)
 food2 = Food.new(name: "すし", price: 1000, calorie: 600)
 
