@@ -1,5 +1,8 @@
 # encoding: utf-8
 
+# requireを用いて、Dateクラスを読み込んでください
+require "date"
+
 class Menu
   attr_accessor :name
   attr_accessor :price
@@ -21,7 +24,9 @@ class Menu
     return total_price
   end
 
-  # クラスメソッド「is_discount_day?」を定義してください
   def Menu.is_discount_day?
+    # 日曜日であればtrue、そうでなければfalseを返してください
+    today = Date.today
+    return today.sunday?
   end
 end
