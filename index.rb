@@ -3,6 +3,8 @@
 require "./food"
 require "./drink"
 
+puts "日曜限定100円割引セール実施中！"
+
 food1 = Food.new(name: "ピザ", price: 800, calorie: 700)
 food2 = Food.new(name: "すし", price: 1000, calorie: 600)
 drink1 = Drink.new(name: "コーラ", price: 300, amount: 500)

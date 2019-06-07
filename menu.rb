@@ -1,6 +1,5 @@
 # encoding: utf-8
 
-# requireを用いて、Dateクラスを読み込んでください
 require "date"
 
 class Menu
@@ -21,11 +20,16 @@ class Menu
     if count >= 3
       total_price -= 100
     end
+
+    # if文を作成してください
+    if count >= 1 && Menu.is_discount_day?
+      total_price -= 100
+    end
+
     return total_price
   end
 
   def Menu.is_discount_day?
-    # 日曜日であればtrue、そうでなければfalseを返してください
     today = Date.today
     return today.sunday?
   end
