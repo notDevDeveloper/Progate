@@ -1,8 +1,6 @@
-const name = "にんじゃわんこ";
-const age = 14;
+const level = 12;
 
-// 「ぼくの名前は〇〇です」とコンソールに出力してください
-console.log(`ぼくの名前は${name}です`);
-
-// 「今は〇〇歳です」と出力してください
-console.log(`今は${age}歳です`);
+// 条件式を「level > 10」とするif文を作ってください
+if (level > 10) {
+  console.log("レベルが10より大きいです");
+}
