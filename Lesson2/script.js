@@ -1,7 +1,18 @@
-const animals = ["dog", "cat", "sheep"];
+const animals = [
+  "dog",
+  "cat",
+  "sheep",
+  "rabbit",
+  "monkey",
+  "tiger",
+  "bear",
+  "elephant"
+];
 
-// 配列animalsの3つ目の要素を「rabbit」に更新してください
-animals[2] = "rabbit";
+// lengthを用いて配列の要素の数を出力してください
+console.log(animals.length);
 
-// 配列animalsの3つ目の要素をコンソールに表示して下さい
-console.log(animals[2]);
+// lengthを用いて条件式を書き換えてください
+for (let i = 0; i < animals.length; i++) {
+  console.log(animals[i]);
+}
