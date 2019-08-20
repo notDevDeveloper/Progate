@@ -1,6 +1,17 @@
-const age = 24;
+const rank = 5;
 
-// 指定された条件のif文を作成してください
-if (age >= 20 && age < 30) {
-  console.log("私は20代です");
+switch (rank) {
+  case 1:
+    console.log("金メダルです！");
+    break;
+  case 2:
+    console.log("銀メダルです！");
+    break;
+  case 3:
+    console.log("銅メダルです！");
+    break;
+  // defaultの処理を追加してください
+  default:
+    console.log("メダルはありません");
+    break;
 }
