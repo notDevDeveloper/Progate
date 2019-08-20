@@ -1,18 +1,5 @@
-const animals = [
-  "dog",
-  "cat",
-  "sheep",
-  "rabbit",
-  "monkey",
-  "tiger",
-  "bear",
-  "elephant"
-];
+// 定数characterを定義し、指定されたオブジェクトを代入してください
+const character = { name: "にんじゃわんこ", age: 14 };
 
-// lengthを用いて配列の要素の数を出力してください
-console.log(animals.length);
-
-// lengthを用いて条件式を書き換えてください
-for (let i = 0; i < animals.length; i++) {
-  console.log(animals[i]);
-}
+// characterの値を出力してください
+console.log(character);
