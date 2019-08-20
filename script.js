@@ -1,12 +1,8 @@
-let number = 7;
-console.log(number);
+// 定数languageを定義してください
+const language = "フランス語";
 
-// 変数numberの値に3を加えてください
-number += 3;
+// 定数languageの値を出力してください
+console.log(language);
 
-console.log(number);
-
-// 変数numberの値を2で割ってください
-number /= 2;
-
-console.log(number);
+// 定数languageを用いて、「〇〇を話せます」と出力してください
+console.log(language + "を話せます");
