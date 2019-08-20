@@ -1,10 +1,19 @@
-const character = { name: "にんじゃわんこ", age: 14 };
+const characters = [
+  { name: "にんじゃわんこ", age: 14 },
+  { name: "ひつじ仙人", age: 100 },
+  { name: "ベイビーわんこ", age: 5 }
+];
 
-// characterのnameの値を出力してください
-console.log(character.name);
+// for文を完成させてください
+for (let i = 0; i < characters.length; i++) {
+  console.log("--------------------");
 
-// characterのageの値を「20」に更新してください
-character.age = 20;
+  // 定数characterを定義してください
+  const character = characters[i];
 
-// characterをコンソールに出力してください
-console.log(character);
+  // 「名前は〇〇です」を出力してください
+  console.log(`名前は${character.name}です`);
+
+  // 「〇〇歳です」を出力してください
+  console.log(`${character.age}歳です`);
+}
