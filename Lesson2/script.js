@@ -1,8 +1,4 @@
-// 変数numberを定義してください
-let number = 1;
-
-// while文を作成してください
-while (number <= 100) {
+// for文を用いて、1から100までの数字を出力してください
+for (let number = 1; number <= 100; number++) {
   console.log(number);
-  number += 1;
 }
