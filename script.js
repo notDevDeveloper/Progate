@@ -1,6 +1,11 @@
-const level = 12;
+const password = "ninjawanko";
 
-// 条件式を「level > 10」とするif文を作ってください
-if (level > 10) {
-  console.log("レベルが10より大きいです");
+// passwordの値が"ninjawanko"の場合、「ログインに成功しました」と出力してください
+if (password === "ninjawanko") {
+  console.log("ログインに成功しました");
+}
+
+// passwordの値が"ninjawanko"でない場合、「パスワードが間違っています」と出力してください
+if (password !== "ninjawanko") {
+  console.log("パスワードが間違っています");
 }
