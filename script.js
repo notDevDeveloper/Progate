@@ -1,7 +1,7 @@
 $(function() {
-  // 以下で、fadeOutメソッドを用いて<img>要素を隠してください
-  $("img").fadeOut();
+  // slideUpメソッドを用いて、「#title」の要素を隠してください
+  $("#title").slideUp();
 
-  // 以下で、slideUpメソッドを用いて<p>要素を隠してください
-  $("p").slideUp();
+  // fadeOutメソッドを用いて、「.lesson-item」要素を隠してください
+  $(".lesson-item").fadeOut();
 });
