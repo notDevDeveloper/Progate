@@ -1,8 +1,8 @@
-// 関数の引数にnameを追加してください
-const greet = name => {
-  // 「こんにちは、〇〇さん」となるように出力してください
-  console.log(`こんにちは、${name}さん`);
+// 関数の引数にnumber1とnumber2を追加してください
+const add = (number1, number2) => {
+  // number1とnumber2を足した値をコンソールに出力してください
+  console.log(number1 + number2);
 };
 
-// greetの引数に「ひつじ仙人」を渡して呼び出してください
-greet("ひつじ仙人");
+// 引数に5と7を渡して関数を呼び出してください
+add(5, 7);
