@@ -181,7 +181,6 @@ header {
   font-weight: normal;
 }
 
-/* lesson一覧部分のCSSを貼り付けてください */
 .lesson {
   float: left;
   width: 25%;
@@ -203,10 +202,14 @@ header {
 .text-contents {
   margin: 3% auto;
   width: 80%;
+  display: none;
   font-size: 12px;
   color: #b3aeb5;
-  /* displayプロパティをnoneにしてください */
-  display: none;
+}
+
+/* ここに.text-activeのCSSを追加してください */
+.text-active {
+  display: block;
 }
 
 /*faq wrapper*/
