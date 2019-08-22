@@ -4,17 +4,78 @@
     <meta charset="utf-8" />
     <title>Progate</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <!-- scriptタグを用いて、jQueryを使えるように読み込んでください -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
 
   <body>
-    <div id="language-wrapper">
-      <h1 class="language-title">jQueryとは?</h1>
-      <p class="language-text">
-        JavaScriptのライブラリの1つです。ユーザーのクリックに反応して表示されるフォームや、アニメーションなど、HTMLとCSSだけでは実現できなかった様々な動きを表現することができます。
-      </p>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <img
+            class="logo"
+            src="https://prog-8.com/images/html/advanced/main_logo.png"
+          />
+        </div>
+        <div class="header-right">
+          <div class="login">ログイン</div>
+        </div>
+      </div>
+    </header>
+    <div class="signup-modal-wrapper"></div>
+    <div class="login-modal-wrapper"></div>
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>LEARN TO CODE.<br />LEARN TO BE CREATIVE.</h1>
+        <p>
+          progateはオンラインプログラミング学習サービスです。<br />初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。
+        </p>
+        <div class="btn signup">新規登録はこちら</div>
+        <p>or</p>
+        <div class="btn facebook">
+          <span class="fa fa-facebook"></span>Facebookで登録
+        </div>
+        <div class="btn twitter">
+          <span class="fa fa-twitter"></span>Twitterで登録
+        </div>
+      </div>
     </div>
-
+    <div class="lesson-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>Learn Where to Get Started!</h2>
+        </div>
+        <div class="lessons"></div>
+      </div>
+    </div>
+    <div class="faq-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>FAQ</h2>
+        </div>
+        <div class="faq"></div>
+      </div>
+    </div>
+    <div class="message-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
+          <h3 id="tagline">Let's learn to code, learn to be creative!</h3>
+        </div>
+        <div class="btn message">さっそく開発する</div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <img src="https://prog-8.com/images/html/advanced/footer_logo.png" />
+        <p>Learn to Code,Learn to be Creative.</p>
+      </div>
+    </footer>
+    <!-- scriptタグを用いて、script.jsを読み込んでください -->
     <script src="script.js"></script>
   </body>
 </html>
