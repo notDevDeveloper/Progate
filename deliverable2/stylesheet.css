@@ -34,6 +34,8 @@ ul {
 .prev-btn {
   cursor: pointer;
   float: left;
+  /* 初期状態では非表示にしてください */
+  display: none;
 }
 
 .next-btn {
