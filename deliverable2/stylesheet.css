@@ -19,35 +19,43 @@ ul {
   margin-bottom: 30px;
 }
 
-.hide-btn-wrapper {
-  font-size: 16px;
-  margin: 20px 0 30px 0;
-}
-
-.hide-btn {
-  display: inline-block;
-  color: #4e90af;
-  background-color: #e0f5ff;
-  padding: 6px 12px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-.hide-btn:hover {
-  color: #fff;
-  background-color: #5cabd0;
-}
-
 .slides {
   padding: 0;
 }
 
 .slide {
-  display: inline-block;
+  /* displayプロパティをnoneにしてください */
+  display: none;
+}
+
+.active {
+  /* displayプロパティをblockにしてください */
+  display: block;
 }
 
 .slide img {
-  width: 200px;
+  width: 500px;
   height: auto;
   border-radius: 5px;
+}
+
+.index-btn-wrapper {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.index-btn {
+  display: inline-block;
+  color: #4e90af;
+  background-color: #e0f5ff;
+  width: 40px;
+  padding: 6px 0;
+  margin: 0 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.index-btn:hover {
+  color: #fff;
+  background-color: #5cabd0;
 }
