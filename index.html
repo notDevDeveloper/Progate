@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     />
-    <!-- scriptタグを用いて、jQueryを使えるように読み込んでください -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
 
@@ -22,19 +21,60 @@
           />
         </div>
         <div class="header-right">
-          <div class="login">ログイン</div>
+          <div class="login" id="login-show">ログイン</div>
         </div>
       </div>
     </header>
-    <div class="signup-modal-wrapper"></div>
-    <div class="login-modal-wrapper"></div>
+    <!-- "signup-modal"というidをつけてください -->
+    <div id="signup-modal" class="signup-modal-wrapper">
+      <!-- 新規登録用のモーダル部分を表示してください -->
+      <div class="modal">
+        <div id="signup-form">
+          <h2>Emailで新規登録</h2>
+          <form action="#">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="メールアドレス"
+            />
+            <input
+              class="form-control"
+              type="password"
+              placeholder="パスワード"
+            />
+            <div id="submit-btn">新規登録</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="login-modal-wrapper" id="login-modal">
+      <div class="modal">
+        <div id="login-form">
+          <h2>Emailログイン</h2>
+          <form action="#">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="メールアドレス"
+            />
+            <input
+              class="form-control"
+              type="password"
+              placeholder="パスワード"
+            />
+            <div id="submit-btn">ログイン</div>
+          </form>
+        </div>
+      </div>
+    </div>
     <div class="top-wrapper">
       <div class="container">
         <h1>LEARN TO CODE.<br />LEARN TO BE CREATIVE.</h1>
         <p>
           progateはオンラインプログラミング学習サービスです。<br />初心者にもやさしいスライドとレッスンで、ウェブサービスを作りながらプログラミングを学んでいきましょう。
         </p>
-        <div class="btn signup">新規登録はこちら</div>
+        <!-- "signup-show"というclassをつけてください -->
+        <div class="btn signup signup-show">新規登録はこちら</div>
         <p>or</p>
         <div class="btn facebook">
           <span class="fa fa-facebook"></span>Facebookで登録
@@ -66,7 +106,8 @@
           <h2>さぁ、あなたもProgateでプログラミングを学んでみませんか?</h2>
           <h3 id="tagline">Let's learn to code, learn to be creative!</h3>
         </div>
-        <div class="btn message">さっそく開発する</div>
+        <!-- "signup-show"というclassをつけてください -->
+        <div class="btn message signup-show">さっそく開発する</div>
       </div>
     </div>
     <footer>
@@ -75,7 +116,6 @@
         <p>Learn to Code,Learn to be Creative.</p>
       </div>
     </footer>
-    <!-- scriptタグを用いて、script.jsを読み込んでください -->
     <script src="script.js"></script>
   </body>
 </html>
