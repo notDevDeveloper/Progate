@@ -24,12 +24,10 @@ ul {
 }
 
 .slide {
-  /* displayプロパティをnoneにしてください */
   display: none;
 }
 
 .active {
-  /* displayプロパティをblockにしてください */
   display: block;
 }
 

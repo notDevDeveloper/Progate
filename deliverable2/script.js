@@ -1,10 +1,13 @@
 $(function() {
-  $("#second-btn").click(function() {
-    // 「.active」要素からactiveクラスを取り除いてください
-    // 2つ目の「.slide」要素にactiveクラスをつけてください
+  $(".index-btn").click(function() {
     $(".active").removeClass("active");
+
+    // 変数clickedIndexを定義し、クリックしたボタンのインデックス番号を代入してください
+    var clickedIndex = $(".index-btn").index(this);
+
+    // eqの引数をclickedIndexに書き換えてください
     $(".slide")
-      .eq(1)
+      .eq(clickedIndex)
       .addClass("active");
   });
 });
