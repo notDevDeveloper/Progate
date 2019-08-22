@@ -1,7 +1,32 @@
 body {
+  margin: 0;
   font-family: "Hiragino Maru Gothic ProN", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   color: #888;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #323a45;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: #5983ff;
+  text-decoration: none;
 }
 
 h2,
@@ -14,25 +39,10 @@ h6 {
   font-weight: 400;
 }
 
-label {
-  font-size: 16px;
-}
-
-.container {
-  width: 720px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-h3 {
-  color: #555;
-  padding-top: 50px;
-  padding-bottom: 10px;
-  text-align: center;
-  font-size: 32px;
-  font-weight: 300;
+h4,
+h5 {
+  color: #444;
+  font-size: 18px;
 }
 
 h3::before,
@@ -44,6 +54,32 @@ h3::after {
   height: 1px;
   margin: 0 2rem;
   vertical-align: middle;
+}
+
+label {
+  font-size: 16px;
+}
+
+.container {
+  width: 900px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-title {
+  color: #555;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.section-title h3 {
+  margin: 10px 0;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 36px;
 }
 
 .section-content {
@@ -108,10 +144,6 @@ h3::after {
   background: rgba(0, 0, 0, 0.08);
 }
 
-.form-group {
-  margin-bottom: 20px;
-}
-
 .select-form {
   margin: 10px 0;
   width: 100%;
@@ -133,11 +165,6 @@ h3::after {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s;
   padding: 12px 26px;
-}
-
-.output-wrapper h4 {
-  font-size: 20px;
-  color: rgb(68, 68, 68);
 }
 
 .output-inner {
