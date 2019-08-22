@@ -2,7 +2,20 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Progate</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700"
+    />
     <link rel="stylesheet" href="stylesheet.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   </head>
@@ -10,26 +23,33 @@
   <body>
     <div class="container">
       <div class="section-title">
-        <h3 id="title">にんじゃわんこについて</h3>
+        <h3>キャラクター総選挙</h3>
       </div>
       <div class="section-content">
-        <p id="content">
-          Progateで飼われている柴犬。
-          忍者の格好をするのが趣味(可愛いさが際立つと思っている)。
-          妖精によって深夜4時半頃に召喚され、それ以来Progateのサイトに居座るように。
-          Progateでは、ユーザーの癒やしから、学習のサポートまでを担当。
-          また、フィードバック番長も努め、ユーザーにフィードバックを返信しないと毎日22時に怒鳴ってくる。
-        </p>
-        <a href="https://prog-8.com" id="link">
-          → にんじゃわんこについてもっと詳しく
-        </a>
-      </div>
-      <div class="output-wrapper">
-        <h4>内容</h4>
-        <div class="output-inner">
-          <p class="output-item">タイトル：<span id="title-text"></span></p>
-          <p class="output-item">文章のid：<span id="content-id"></span></p>
-          <p class="output-item">リンクのURL：<span id="link-href"></span></p>
+        <form id="form" class="form">
+          <div class="form-group">
+            <div>キャラクター：</div>
+            <select id="select-form" class="select-form">
+              <option value="0">選択してください</option>
+              <option value="1">1. にんじゃわんこ</option>
+              <option value="2">2. ひつじ仙人</option>
+              <option value="3">3. ベイビーわんこ</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <div>理由：</div>
+            <textarea id="text-form" class="text-form"></textarea>
+          </div>
+          <button type="submit" class="btn btn-submit">送信</button>
+        </form>
+        <div class="output-wrapper">
+          <h4>結果</h4>
+          <div class="output-inner">
+            <p class="output-item">
+              好きなキャラクター：<span id="output-select"></span>
+            </p>
+            <p class="output-item">理由：<span id="output-text"></span></p>
+          </div>
         </div>
       </div>
     </div>

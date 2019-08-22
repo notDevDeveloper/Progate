@@ -25,7 +25,7 @@ a {
 }
 
 a:hover {
-  color: #d0472e;
+  color: #5983ff;
   text-decoration: none;
 }
 
@@ -45,8 +45,8 @@ h5 {
   font-size: 18px;
 }
 
-h3:before,
-h3:after {
+h3::before,
+h3::after {
   content: "";
   background-color: #616161;
   display: inline-block;
@@ -54,6 +54,10 @@ h3:after {
   height: 1px;
   margin: 0 2rem;
   vertical-align: middle;
+}
+
+label {
+  font-size: 16px;
 }
 
 .container {
@@ -66,7 +70,7 @@ h3:after {
 
 .section-title {
   color: #555;
-  padding-top: 30px;
+  padding-top: 50px;
   padding-bottom: 10px;
   text-align: center;
 }
@@ -79,41 +83,99 @@ h3:after {
 }
 
 .section-content {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
-.section-content p {
-  font-size: 22px;
-  color: #337090;
-  margin: 30px;
+.call-to-action {
+  text-align: center;
+  font-size: 18px;
 }
 
-.section-content a {
-  font-size: 24px;
-  display: block;
-  text-align: right;
+.option-wrapper {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
-.output-wrapper {
-  margin-top: 70px;
+.option-group {
+  margin-bottom: 12px;
+  margin: 20px auto;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.option-image {
+  width: 120px;
+  height: auto;
+}
+
+.option-btn {
+  cursor: pointer;
+  width: 154px;
+  margin: 10px;
+  padding: 12px 0;
+  text-align: center;
+  background-color: #5dca88;
+  box-shadow: 0px 4px #279c56;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.option-btn:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+}
+
+.form .select-form,
+.form .text-form {
+  margin: 0;
+  padding: 0 10px;
+  border: none;
+  color: #202020;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 0;
+  box-shadow: none;
+  transition: all 0.3s;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.select-form {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.text-form {
+  width: 100%;
+  height: 75px;
+}
+
+.btn-submit {
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  background: #5983ff;
+  border: 1px solid #5979ff;
+  color: white;
+  box-shadow: inset 0 1px 0 #5867ed;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+  padding: 12px 26px;
 }
 
 .output-inner {
   padding: 10px 20px;
-  margin: 10px 0;
   border: 2px dotted;
   border-radius: 3px;
   width: 100%;
-  margin-bottom: 10px;
-  font-size: 22px;
+  margin-bottom: 60px;
 }
 
 .output-item {
-  margin: 30px;
-}
-
-.output-inner span {
-  color: #2a374a;
-  font-size: 24px;
+  font-size: 18px;
+  margin: 8px 0px;
 }
