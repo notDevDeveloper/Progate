@@ -19,6 +19,28 @@ ul {
   margin-bottom: 30px;
 }
 
+.change-btn-wrapper {
+  width: 500px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.change-btn-wrapper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.prev-btn {
+  cursor: pointer;
+  float: left;
+}
+
+.next-btn {
+  cursor: pointer;
+  float: right;
+}
+
 .slides {
   padding: 0;
 }
