@@ -23,9 +23,9 @@ $(function() {
     }
   );
 
-  // 「#top-btn」をクリックしたときに
-  // ページ最上部まで自動でスクロールするようにしてください
   $("#top-btn").click(function() {
-    $("html, body").scrollTop(0);
+    // animateメソッドを用いて、
+    // アニメーション付きでスクロールするようにしてください。
+    $("html, body").animate({ scrollTop: 0 }, 500);
   });
 });
