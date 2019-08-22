@@ -14,16 +14,25 @@ $(function() {
 
   $(".lesson-hover").hover(
     function() {
-      // 子要素の「.text-contents」の要素を取得し、text-activeクラスをつけてください
       $(this)
         .find(".text-contents")
         .addClass("text-active");
     },
     function() {
-      // 子要素の「.text-contents」の要素を取得し、text-activeクラスを外してください
       $(this)
         .find(".text-contents")
         .removeClass("text-active");
     }
   );
+
+  // 「.faq-list-item」のclickイベントを作成してください
+  $(".faq-list-item").click(function() {
+    var $answer = $(this).find(".answer");
+
+    if ($answer.hasClass("open")) {
+      $answer.removeClass("open");
+    } else {
+      $answer.addClass("open");
+    }
+  });
 });
