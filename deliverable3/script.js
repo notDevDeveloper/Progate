@@ -1,12 +1,16 @@
 $(function() {
   $("#form").submit(function() {
-    // 変数selectValueを定義してください。
     var selectValue = $("#select-form").val();
-
     var textValue = $("#text-form").val();
-    // 「#output-select」要素のテキストを変数selectValueの値で書き換えてください。
-    $("#output-select").text(selectValue);
 
+    // textValueが空のとき、エラー文を表示してください
+    if (textValue == "") {
+      $("#error-message").text("理由を記入してください");
+    } else {
+      $("#error-message").text("");
+    }
+
+    $("#output-select").text(selectValue);
     $("#output-text").text(textValue);
     return false;
   });
