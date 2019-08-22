@@ -1,4 +1,15 @@
 $(function() {
+  // toggleChangeBtn関数を定義してください
+  function toggleChangeBtn() {
+    var slideIndex = $(".slide").index($(".active"));
+    $(".change-btn").show();
+    if (slideIndex == 0) {
+      $(".prev-btn").hide();
+    } else if (slideIndex == 3) {
+      $(".next-btn").hide();
+    }
+  }
+
   $(".index-btn").click(function() {
     $(".active").removeClass("active");
     var clickedIndex = $(".index-btn").index($(this));
@@ -6,18 +17,8 @@ $(function() {
       .eq(clickedIndex)
       .addClass("active");
 
-    // 1. 変数slideIndexに「.active」要素のインデックス番号を代入してください
-    var slideIndex = $(".slide").index($(".active"));
-
-    // 3. change-btn要素を表示してください
-    $(".change-btn").show();
-
-    // 2. ifとelse ifを用いて、「.change-btn」の表示/非表示をおこなってください
-    if (slideIndex === 0) {
-      $(".prev-btn").hide();
-    } else if (slideIndex === 3) {
-      $(".next-btn").hide();
-    }
+    // 以下をtoggleChangeBtn関数にまとめ、関数を呼び出すようにしてください
+    toggleChangeBtn();
   });
 
   $(".change-btn").click(function() {
@@ -29,18 +30,7 @@ $(function() {
       $displaySlide.prev().addClass("active");
     }
 
-    // 「.index-btn」のクリックイベントと同様の処理を記述してください
-    // 1. 変数slideIndexに「.active」要素のインデックス番号を代入してください
-    var slideIndex = $(".slide").index($(".active"));
-
-    // 3. change-btn要素を表示してください
-    $(".change-btn").show();
-
-    // 2. ifとelse ifを用いて、「.change-btn」の表示/非表示をおこなってください
-    if (slideIndex === 0) {
-      $(".prev-btn").hide();
-    } else if (slideIndex === 3) {
-      $(".next-btn").hide();
-    }
+    // 以下をtoggleChangeBtn関数にまとめ、関数を呼び出すようにしてください
+    toggleChangeBtn();
   });
 });
