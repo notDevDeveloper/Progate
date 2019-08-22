@@ -99,7 +99,6 @@ header {
 }
 
 /*モーダル*/
-/* 「.signup-modal-wrapper」を追加してください */
 .login-modal-wrapper,
 .signup-modal-wrapper {
   position: fixed;
