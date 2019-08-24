@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* ここに@mixin cardを作成してください */
 body {
   min-width: 460px;
   text-align: center;
@@ -16,7 +17,6 @@ header {
   text-align: center;
 }
 
-/* ここにコードを書いていきましょう */
 .profile {
   padding: 56px 0;
   margin: 0 auto 32px;
@@ -29,6 +29,34 @@ header {
 
 .profile .info p {
   color: #2b546a;
+}
+
+/* ここに.htmlを作成してください */
+.html {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.html img {
+  margin: 16px auto 20px;
+  display: block;
+}
+
+/* ここに.javascriptを作成してください */
+.javascript {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+
+.javascript img {
+  margin: 16px auto 20px;
+  display: block;
 }
 
 footer {

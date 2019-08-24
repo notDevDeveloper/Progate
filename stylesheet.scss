@@ -1,3 +1,16 @@
+/* ここに@mixin cardを作成してください */
+@mixin card {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #ffffff;
+  img {
+    margin: 16px auto 20px;
+    display: block;
+  }
+}
+
 body {
   min-width: 460px;
   text-align: center;
@@ -15,19 +28,26 @@ header {
   text-align: center;
 }
 
-/* ここにコードを書いていきましょう */
 .profile {
   padding: 56px 0;
   margin: 0 auto 32px;
   background-color: #ffffff;
-
   .info {
     margin-top: 16px;
-
     p {
       color: #2b546a;
     }
   }
+}
+
+/* ここに.htmlを作成してください */
+.html {
+  @include card;
+}
+
+/* ここに.javascriptを作成してください */
+.javascript {
+  @include card;
 }
 
 footer {
