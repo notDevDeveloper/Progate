@@ -1,8 +1,7 @@
 @charset "UTF-8";
-/* ここで_variables.scssを読み込んでください */
-/* ここに変数を定義してください */
+/* 変数rubyを追加してください */
 body {
-  min-width: 460px;
+  min-width: 700px;
   text-align: center;
   font-family: "Hiragino Kaku Gothic ProN";
   background-color: #f0f5fc;
@@ -33,7 +32,6 @@ header {
 }
 
 .html {
-  /* 引数の値を変数を用いて置き換えてください */
   padding: 40px 28px;
   margin: 16px 8px;
   display: inline-block;
@@ -64,7 +62,6 @@ header {
 }
 
 .javascript {
-  /* 引数の値を変数を用いて置き換えてください */
   padding: 40px 28px;
   margin: 16px 8px;
   display: inline-block;
@@ -92,6 +89,36 @@ header {
 
 .javascript h4 {
   color: #998900;
+}
+
+.ruby {
+  padding: 40px 28px;
+  margin: 16px 8px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #ff768a;
+}
+
+.ruby img {
+  margin: 16px auto 20px;
+  display: block;
+}
+
+.ruby a {
+  padding: 16px 32px;
+  background-color: #ffffff;
+  border-radius: 26px;
+  display: inline-block;
+  color: #ff768a;
+}
+
+.ruby a:hover {
+  color: #ffffff;
+  background-color: #ff435e;
+}
+
+.ruby h4 {
+  color: #ff1033;
 }
 
 footer {
