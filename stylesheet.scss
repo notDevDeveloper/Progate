@@ -1,14 +1,30 @@
-/* @mixin cardに引数を与えてください */
 @mixin card($color) {
   padding: 40px 28px;
   margin: 16px 8px;
   display: inline-block;
   border-radius: 3px;
-  /* background-colorの値を変えてください */
   background-color: $color;
   img {
     margin: 16px auto 20px;
     display: block;
+  }
+  /* ここにaを追加してください */
+  a {
+    padding: 16px 32px;
+    background-color: #ffffff;
+    border-radius: 26px;
+    display: inline-block;
+    color: $color;
+    &:hover {
+      color: #ffffff;
+      /* ここにbackground-colorを追加してください */
+      background-color: darken($color, 10%);
+    }
+  }
+
+  /* ここにh4を追加してください */
+  h4 {
+    color: darken($color, 20%);
   }
 }
 
@@ -41,11 +57,10 @@ header {
   }
 }
 
-/* @include cardの引数に値を指定してください */
 .html {
   @include card(#1bd7cf);
 }
-/* @include cardの引数に値を指定してください */
+
 .javascript {
   @include card(#ffe400);
 }

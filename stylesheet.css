@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* @mixin cardに引数を与えてください */
 body {
   min-width: 460px;
   text-align: center;
@@ -31,14 +30,14 @@ header {
   color: #2b546a;
 }
 
-/* @include cardの引数に値を指定してください */
 .html {
   padding: 40px 28px;
   margin: 16px 8px;
   display: inline-block;
   border-radius: 3px;
-  /* background-colorの値を変えてください */
   background-color: #1bd7cf;
+  /* ここにaを追加してください */
+  /* ここにh4を追加してください */
 }
 
 .html img {
@@ -46,19 +45,55 @@ header {
   display: block;
 }
 
-/* @include cardの引数に値を指定してください */
+.html a {
+  padding: 16px 32px;
+  background-color: #ffffff;
+  border-radius: 26px;
+  display: inline-block;
+  color: #1bd7cf;
+}
+
+.html a:hover {
+  color: #ffffff;
+  /* ここにbackground-colorを追加してください */
+  background-color: #15aaa3;
+}
+
+.html h4 {
+  color: #107c78;
+}
+
 .javascript {
   padding: 40px 28px;
   margin: 16px 8px;
   display: inline-block;
   border-radius: 3px;
-  /* background-colorの値を変えてください */
   background-color: #ffe400;
+  /* ここにaを追加してください */
+  /* ここにh4を追加してください */
 }
 
 .javascript img {
   margin: 16px auto 20px;
   display: block;
+}
+
+.javascript a {
+  padding: 16px 32px;
+  background-color: #ffffff;
+  border-radius: 26px;
+  display: inline-block;
+  color: #ffe400;
+}
+
+.javascript a:hover {
+  color: #ffffff;
+  /* ここにbackground-colorを追加してください */
+  background-color: #ccb600;
+}
+
+.javascript h4 {
+  color: #998900;
 }
 
 footer {
