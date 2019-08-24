@@ -17,6 +17,20 @@ header {
 }
 
 /* ここにコードを書いていきましょう */
+.profile {
+  padding: 56px 0;
+  margin: 0 auto 32px;
+  background-color: #ffffff;
+}
+
+.profile .info {
+  margin-top: 16px;
+}
+
+.profile .info p {
+  color: #2b546a;
+}
+
 footer {
   margin: 100px 0 32px;
   color: #2b546a;
