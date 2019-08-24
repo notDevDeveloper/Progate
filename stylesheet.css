@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* ここに@mixin cardを作成してください */
+/* @mixin cardに引数を与えてください */
 body {
   min-width: 460px;
   text-align: center;
@@ -31,13 +31,14 @@ header {
   color: #2b546a;
 }
 
-/* ここに.htmlを作成してください */
+/* @include cardの引数に値を指定してください */
 .html {
   padding: 40px 28px;
   margin: 16px 8px;
   display: inline-block;
   border-radius: 3px;
-  background-color: #ffffff;
+  /* background-colorの値を変えてください */
+  background-color: #1bd7cf;
 }
 
 .html img {
@@ -45,13 +46,14 @@ header {
   display: block;
 }
 
-/* ここに.javascriptを作成してください */
+/* @include cardの引数に値を指定してください */
 .javascript {
   padding: 40px 28px;
   margin: 16px 8px;
   display: inline-block;
   border-radius: 3px;
-  background-color: #ffffff;
+  /* background-colorの値を変えてください */
+  background-color: #ffe400;
 }
 
 .javascript img {
