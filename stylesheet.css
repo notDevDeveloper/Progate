@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* ここで_variables.scssを読み込んでください */
+/* ここに変数を定義してください */
 body {
   min-width: 460px;
   text-align: center;
@@ -31,13 +33,12 @@ header {
 }
 
 .html {
+  /* 引数の値を変数を用いて置き換えてください */
   padding: 40px 28px;
   margin: 16px 8px;
   display: inline-block;
   border-radius: 3px;
   background-color: #1bd7cf;
-  /* ここにaを追加してください */
-  /* ここにh4を追加してください */
 }
 
 .html img {
@@ -55,7 +56,6 @@ header {
 
 .html a:hover {
   color: #ffffff;
-  /* ここにbackground-colorを追加してください */
   background-color: #15aaa3;
 }
 
@@ -64,13 +64,12 @@ header {
 }
 
 .javascript {
+  /* 引数の値を変数を用いて置き換えてください */
   padding: 40px 28px;
   margin: 16px 8px;
   display: inline-block;
   border-radius: 3px;
   background-color: #ffe400;
-  /* ここにaを追加してください */
-  /* ここにh4を追加してください */
 }
 
 .javascript img {
@@ -88,7 +87,6 @@ header {
 
 .javascript a:hover {
   color: #ffffff;
-  /* ここにbackground-colorを追加してください */
   background-color: #ccb600;
 }
 

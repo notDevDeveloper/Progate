@@ -1,3 +1,6 @@
+/* ここで_variables.scssを読み込んでください */
+@import "variables";
+
 @mixin card($color) {
   padding: 40px 28px;
   margin: 16px 8px;
@@ -8,7 +11,6 @@
     margin: 16px auto 20px;
     display: block;
   }
-  /* ここにaを追加してください */
   a {
     padding: 16px 32px;
     background-color: #ffffff;
@@ -17,12 +19,9 @@
     color: $color;
     &:hover {
       color: #ffffff;
-      /* ここにbackground-colorを追加してください */
       background-color: darken($color, 10%);
     }
   }
-
-  /* ここにh4を追加してください */
   h4 {
     color: darken($color, 20%);
   }
@@ -58,11 +57,13 @@ header {
 }
 
 .html {
-  @include card(#1bd7cf);
+  /* 引数の値を変数を用いて置き換えてください */
+  @include card($html);
 }
 
 .javascript {
-  @include card(#ffe400);
+  /* 引数の値を変数を用いて置き換えてください */
+  @include card($javascript);
 }
 
 footer {
