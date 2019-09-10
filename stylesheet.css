@@ -4,19 +4,22 @@ body {
 
 li {
   list-style: none;
-  /* floatプロパティをleftにしてください */
   float: left;
+  /* 上下のpaddingを33px、左右のpaddingを20pxにしてください */
+  padding: 33px 20px;
 }
 
 .header {
-  background-color: #f7f2b4;
+  background-color: #26d0c9;
+  color: #fff;
   height: 90px;
 }
 
-/* header-logoの文字の大きさを36px、floatプロパティをleftにしてください */
 .header-logo {
-  font-size: 36px;
   float: left;
+  font-size: 36px;
+  /* 上下のpaddingを20px、左右のpaddingを40pxにしてください */
+  padding: 20px 40px;
 }
 
 .main {
