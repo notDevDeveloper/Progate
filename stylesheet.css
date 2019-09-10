@@ -1,17 +1,20 @@
 h1 {
-  color: #ff0000;
-  /* 文字の大きさを40pxにしてください */
-  font-size: 40px;
+  color: #e6855e;
+  font-size: 30px;
+  /* 背景の色を#f3f372にしてください */
+  background-color: #f3f372;
 
-  /* 文字の種類をserifにしてください */
-  font-family: serif;
+  /* 高さを80pxにしてください */
+  height: 80px;
+
+  /* 幅を200pxにしてください */
+  width: 200px;
 }
 
-p {
-  color: #0000ff;
-  /* 文字の大きさを20pxにしてください */
-  font-size: 20px;
+img {
+  /* 高さを50pxにしてください */
+  height: 50px;
 
-  /* 文字の種類を"Lucida Grande"にしてください */
-  font-family: "Lucida Grande";
+  /* 幅を70pxにしてください */
+  width: 70px;
 }
