@@ -24,23 +24,17 @@ li {
 }
 
 .main {
-  /* background-colorの指定を消してください */
-  /* heightの指定を消してください */
-  /* 上下のpaddingを100px、左右のpaddingを80pxにしてください */
   padding: 100px 80px;
 }
 
-/* copy-containerの中のh1のfont-sizeを指定してください */
 .copy-container h1 {
   font-size: 140px;
 }
 
-/* copy-containerの中のh2のfont-sizeを指定してください */
 .copy-container h2 {
   font-size: 60px;
 }
 
-/* copy-containerの中のspanの色を指定してください */
 .copy-container span {
   color: #ff4a4a;
 }
