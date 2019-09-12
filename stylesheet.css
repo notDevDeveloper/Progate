@@ -4,7 +4,6 @@ body {
 
 li {
   list-style: none;
-  /* 以下の2行を削除してください */
 }
 
 .header {
@@ -19,7 +18,6 @@ li {
   padding: 20px 40px;
 }
 
-/* header-listの中のli要素にのみ適用したいCSSを記述してください */
 .header-list li {
   float: left;
   padding: 33px 20px;
@@ -31,6 +29,30 @@ li {
 }
 
 .footer {
-  background-color: #ceccf3;
-  height: 270px;
+  /* background-colorを#2f5167に変更してください */
+  background-color: #2f5167;
+
+  /* colorを#fffにしてください */
+  color: #ffffff;
+
+  /* heightを120pxに変更してください */
+  height: 120px;
+  /* 上下左右のpaddingを40pxにしてください */
+  padding: 40px;
+}
+
+/* footer-logoのfont-sizeとfloatを指定してください */
+.footer-logo {
+  font-size: 32px;
+  float: left;
+}
+
+/* footer-listのfloatを指定してください */
+.footer-list {
+  float: right;
+}
+
+/* footer-listの中のli要素のpadding-bottomを指定してください */
+.footer-list li {
+  padding-bottom: 20px;
 }
