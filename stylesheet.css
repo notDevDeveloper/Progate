@@ -4,9 +4,7 @@ body {
 
 li {
   list-style: none;
-  float: left;
-  /* 上下のpaddingを33px、左右のpaddingを20pxにしてください */
-  padding: 33px 20px;
+  /* 以下の2行を削除してください */
 }
 
 .header {
@@ -18,8 +16,13 @@ li {
 .header-logo {
   float: left;
   font-size: 36px;
-  /* 上下のpaddingを20px、左右のpaddingを40pxにしてください */
   padding: 20px 40px;
+}
+
+/* header-listの中のli要素にのみ適用したいCSSを記述してください */
+.header-list li {
+  float: left;
+  padding: 33px 20px;
 }
 
 .main {
