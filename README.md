@@ -1,2 +1,2 @@
 # ruby-learning
-This repository is Ruby for my studying.
+The repository is for learning Ruby on Progate.
