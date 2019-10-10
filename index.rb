@@ -1,8 +1,13 @@
 # encoding: utf-8
 
-score = 92
+score = 100
 
-# 条件式を「score > 80」とするif文をつくってください
-if score > 80
-  puts "よくできました"
+# scoreが100の場合、「満点です」と出力してください
+if score == 100
+  puts "満点です"
+end
+
+# scoreが100でない場合、「満点ではありません」と出力してください
+if score != 100
+  puts "満点ではありません"
 end
