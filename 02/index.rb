@@ -1,6 +1,9 @@
 # encoding: utf-8
 
-# 省略した書き方で書き換えてください
 exam = { subject: "Math", score: 80 }
 
-puts "#{exam[:subject]}: #{exam[:score]}点"
+# キー「:grade」の値を出力してください
+puts exam[:grade]
+
+# nilを出力してください
+puts nil
