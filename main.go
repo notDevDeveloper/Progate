@@ -1,8 +1,7 @@
 package main
 
 func main() {
-	println("Hello, 世界")
-}
-func sub() {
-	println("Hello, Go")
+	// 「こんにちは、世界」と出力してください
+	println("こんにちは、世界")
+	// この行をコメントにしてください
 }
