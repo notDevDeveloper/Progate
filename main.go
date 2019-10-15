@@ -1,12 +1,9 @@
 package main
 
 func main() {
-	// 「こんにちは世界」となるように文字列を連結して出力してください
-	println("こんにちは" + "世界")
+	// 変数messageを定義し、「Hello, 世界」を代入してください
+	var message string = "Hello, 世界"
 
-	// 文字列"38"と"19"を連結して出力してください
-	println("38" + "19")
-
-	// 数値38に19を足して出力してください
-	println(38 + 19)
+	// 変数messageの値を出力してください
+	println(message)
 }
