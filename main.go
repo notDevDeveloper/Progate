@@ -1,10 +1,13 @@
 package main
 
 func main() {
-	var message string = "Hello, 世界"
+	// 変数messageを省略して定義し、"Hello, 世界"を代入してください
+	message := "Hello, 世界"
 
-	// 変数messageの値を、文字列"Hello, Go"に更新してください
-	message = "Hello, Go"
+	// 変数numberを省略して定義し、100を代入してください
+	number := 100
 
-	println(message)
+	// 変数messageと変数numberを同時に出力してください
+	println(message, number)
+
 }
