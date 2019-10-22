@@ -1,13 +1,16 @@
 package main
 
 func main() {
-	// 変数messageを省略して定義し、"Hello, 世界"を代入してください
-	message := "Hello, 世界"
+	// s1とs2の定義がまだされていなく、出力できないので消してください
 
-	// 変数numberを省略して定義し、100を代入してください
-	number := 100
+	s1 := "Hello"
+	s2 := "世界"
 
-	// 変数messageと変数numberを同時に出力してください
-	println(message, number)
+	// 変数定義から代入に変更してください
+	s1 = "こんにちは"
 
+	// 変数s1はString型なので、消してください
+
+	// 変数s1とs2を同時に出力してください
+	println(s1, s2)
 }
