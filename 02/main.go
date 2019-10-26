@@ -3,9 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	month := 6
-	day := 19
+	name1 := "にんじゃわんこ"
+	name2 := "ひつじ仙人"
+	name3 := "ベイビーわんこ"
 
-	// fmt.Printfと、変数month・dayを用いて、「今日は、◯月◯日です」と表示してください
-	fmt.Printf("今日は、%d月%d日です", month, day)
+	// 改行文字を用いて、それぞれの文字列の末尾で改行してください
+	fmt.Printf("ようこそ、%sさん\n", name1)
+	fmt.Printf("ようこそ、%sさん\n", name2)
+	fmt.Printf("ようこそ、%sさん\n", name3)
 }
