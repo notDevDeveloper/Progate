@@ -1,10 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
+
+//「math/rand」パッケージをインポートしてください
 
 func main() {
-	// 1から100までの整数を出力してください
-	for i := 1; i <= 100; i++ {
-		fmt.Println(i)
+
+	for i := 1; i <= 5; i++ {
+		// 0~9のランダムな整数を生成し、出力してください
+		fmt.Println(rand.Intn(10))
 	}
 }
