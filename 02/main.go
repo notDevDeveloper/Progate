@@ -3,8 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	weather := "晴れ"
+	month := 6
+	day := 19
 
-	// fmt.Printfと変数weatherを用いて「今日の天気は◯◯です」と表示してください
-	fmt.Printf("今日の天気は%sです", weather)
+	// fmt.Printfと、変数month・dayを用いて、「今日は、◯月◯日です」と表示してください
+	fmt.Printf("今日は、%d月%d日です", month, day)
 }
