@@ -1,9 +1,10 @@
 package main
 
-// 「fmt」パッケージをインポートしてください
 import "fmt"
 
 func main() {
-	// fmtパッケージを使って、「Hello, 世界」と出力するように書き換えてください
-	fmt.Println("Hello, 世界")
+	weather := "晴れ"
+
+	// fmt.Printfと変数weatherを用いて「今日の天気は◯◯です」と表示してください
+	fmt.Printf("今日の天気は%sです", weather)
 }
