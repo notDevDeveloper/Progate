@@ -3,15 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	// 変数inputを定義してください
+	// 以下のコードを切り取ってください
+
+	// ここから上を切り取ってください
+
+	// ask関数を呼び出してください
+	ask()
+}
+
+// ask関数を定義してください
+func ask() {
 	var input string
-
-	// 「次の単語を入力してください: dog」と出力してください
 	fmt.Println("次の単語を入力してください: dog")
-
-	// Scanで入力を受け取ってください
 	fmt.Scan(&input)
-
-	// 受け取った値を出力してください
 	fmt.Printf("%sと入力されました", input)
 }
