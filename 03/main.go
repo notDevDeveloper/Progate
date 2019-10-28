@@ -3,17 +3,22 @@ package main
 import "fmt"
 
 func main() {
-	// 引数を使って、3回askを呼んでください
-	ask("dog")
-	ask("cat")
-	ask("fish")
+	// 引数に1を渡してください
+	ask(1, "dog")
+
+	// 引数に2を渡してください
+	ask(2, "cat")
+
+	// 引数に3を渡してください
+	ask(3, "fish")
 }
 
-// 引数questionを追加してください
-func ask(question string) {
+// 引数numberを追加してください
+func ask(number int, question string) {
 	var input string
-	// 以下の内容をfmt.Printfを使用して、修正してください
-	fmt.Printf("次の単語を入力してください:%s\n", question)
+	// 下の１行を削除し、指定されたコードを貼り付けてください
+	fmt.Printf("[質問%d] 次の単語を入力してください: %s\n", number, question)
+
 	fmt.Scan(&input)
 	fmt.Printf("%sと入力されました\n", input)
 }
