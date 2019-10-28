@@ -3,14 +3,17 @@ package main
 import "fmt"
 
 func main() {
-	ask()
-	// もう一度ask関数を呼び出してください
-	ask()
+	// 引数を使って、3回askを呼んでください
+	ask("dog")
+	ask("cat")
+	ask("fish")
 }
 
-func ask() {
+// 引数questionを追加してください
+func ask(question string) {
 	var input string
-	fmt.Println("次の単語を入力してください: dog")
+	// 以下の内容をfmt.Printfを使用して、修正してください
+	fmt.Printf("次の単語を入力してください:%s\n", question)
 	fmt.Scan(&input)
 	fmt.Printf("%sと入力されました\n", input)
 }
