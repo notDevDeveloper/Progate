@@ -6,12 +6,16 @@ func main() {
 	name := "John"
 
 	fmt.Println(name)
-	// 変数「namePtr」を定義し、nameのポインタを代入してください
-	var namePtr *string = &name
+	// changeName関数を呼び出してください
+	changeName(&name)
 
-	// ポインタ型変数「namePtr」を使って、変数nameの値を「Kate」に更新してください
-	*namePtr = "Kate"
-
-	// nameの値を出力してください
+	// nameを出力してください
 	fmt.Println(name)
+
+}
+
+// changeName関数が、文字列のポインタ型で値を受け取れるようにしてください。
+func changeName(namePtr *string) {
+	// ポインタ型変数namePtrを使って、変数nameの値を「Kate」に更新してください
+	*namePtr = "Kate"
 }
