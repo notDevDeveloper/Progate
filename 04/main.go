@@ -3,18 +3,26 @@ package main
 import "fmt"
 
 func main() {
-	a := 10
-	b := 10
+	totalScore := 0
+	// 引数にtotalScoreのポインタを渡してください
+	ask(1, "dog", &totalScore)
+	ask(2, "cat", &totalScore)
+	ask(3, "fish", &totalScore)
 
-	// calculate関数を呼び出して、引数としてaそのままとbのポインタを渡してください。
-	calculate(a, &b)
-
-	fmt.Println("引数に整数を指定した場合：", a)
-	fmt.Println("引数にポインタを指定した場合：", b)
+	fmt.Println("スコア", totalScore)
 }
 
-func calculate(a int, bPtr *int) {
-	// a, bPtrそれぞれに１を足す処理を記述してください
-	a++
-	*bPtr++
+// 渡されるtotalScoreのポインタを受け取るように変更してください
+func ask(number int, question string, scorePtr *int) {
+	var input string
+	fmt.Printf("[質問%d] 次の単語を入力してください: %s\n", number, question)
+	fmt.Scan(&input)
+
+	if question == input {
+		fmt.Println("正解!")
+		// ポインタを使って加算してください
+		*scorePtr += 10
+	} else {
+		fmt.Println("不正解!")
+	}
 }
