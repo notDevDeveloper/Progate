@@ -3,20 +3,18 @@ package main
 import "fmt"
 
 func main() {
-	totalScore := 0
-	fn(totalScore)
+	a := 10
+	b := 10
 
-	// 変数totalScoreの値を出力してください
-	fmt.Println(totalScore)
-	// 変数totalScoreのポインタを出力してください
-	fmt.Println(&totalScore)
+	// calculate関数を呼び出して、引数としてaそのままとbのポインタを渡してください。
+	calculate(a, &b)
 
+	fmt.Println("引数に整数を指定した場合：", a)
+	fmt.Println("引数にポインタを指定した場合：", b)
 }
 
-func fn(totalScore int) {
-	totalScore += 10
-	// fn関数の変数totalScoreの値を出力してください
-	fmt.Println(totalScore)
-	// fn関数の変数totalScoreのポインタを出力してください
-	fmt.Println(&totalScore)
+func calculate(a int, bPtr *int) {
+	// a, bPtrそれぞれに１を足す処理を記述してください
+	a++
+	*bPtr++
 }
