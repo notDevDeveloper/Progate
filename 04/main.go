@@ -3,19 +3,20 @@ package main
 import "fmt"
 
 func main() {
-	name := "John"
+	totalScore := 0
+	fn(totalScore)
 
-	fmt.Println(name)
-	// changeName関数を呼び出してください
-	changeName(&name)
-
-	// nameを出力してください
-	fmt.Println(name)
+	// 変数totalScoreの値を出力してください
+	fmt.Println(totalScore)
+	// 変数totalScoreのポインタを出力してください
+	fmt.Println(&totalScore)
 
 }
 
-// changeName関数が、文字列のポインタ型で値を受け取れるようにしてください。
-func changeName(namePtr *string) {
-	// ポインタ型変数namePtrを使って、変数nameの値を「Kate」に更新してください
-	*namePtr = "Kate"
+func fn(totalScore int) {
+	totalScore += 10
+	// fn関数の変数totalScoreの値を出力してください
+	fmt.Println(totalScore)
+	// fn関数の変数totalScoreのポインタを出力してください
+	fmt.Println(&totalScore)
 }
