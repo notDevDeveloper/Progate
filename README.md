@@ -1,3 +1,3 @@
-# Progate__HTML-and-CSS
+# Progate
 
-ProgateのHTML & CSSで学習したリポジトリのアーカイブ用です。
+Progateで学習したリポジトリのアーカイブ用です。
