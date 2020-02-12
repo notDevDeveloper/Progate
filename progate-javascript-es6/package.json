@@ -1,0 +1,25 @@
+{
+  "name": "progate-javascript-es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notDevDeveloper/progate-javascript-es6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notDevDeveloper/progate-javascript-es6/issues"
+  },
+  "homepage": "https://github.com/notDevDeveloper/progate-javascript-es6#readme",
+  "dependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5"
+  }
+}
